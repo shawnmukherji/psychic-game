@@ -49,9 +49,8 @@ updateletterToGuess();
 
 document.onkeyup = function(event) {
 	guessesLeft--;
-	var userGuess;
-	console.log(userGuess)
-
+	var userGuess = event.key; 
+	
 	guessedLetters.push(userGuess);
 	updateGuessesLeft();
 	updateGuessesSoFar();
